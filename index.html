@@ -198,7 +198,7 @@ section { padding: 64px 24px; }
 .partners-grid { display: grid; grid-template-columns: 1fr; gap: 16px; margin-top: 36px; max-width: 480px; }
 .partner-card { background: var(--white); border-radius: 16px; padding: 24px; border-left: 4px solid var(--gold); box-shadow: 0 2px 16px rgba(0,0,0,0.06); display: block; text-decoration: none; transition: all 0.25s; }
 .partner-card:hover { box-shadow: 0 8px 28px rgba(0,0,0,0.12); transform: translateY(-2px); }
-.partner-logo { height: 100px; width: auto; margin-bottom: 16px; display: block; }
+.partner-logo { height: 100px; width: auto; margin: 0 auto 16px auto; display: block; }
 .partner-link { display: inline-flex; align-items: center; gap: 6px; margin-top: 16px; color: var(--gold); font-size: 12px; font-weight: 700; text-decoration: none; }
 .partner-name { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: var(--navy); margin-bottom: 4px; }
 .partner-tag { font-size: 11px; color: var(--gold); font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 14px; }
@@ -207,7 +207,8 @@ section { padding: 64px 24px; }
 .partner-list li::before { content: '•'; position: absolute; left: 0; color: var(--gold); }
 .partner-domains-title { color: var(--gold); font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin: 22px 0 14px; }
 .partner-domains { display: grid; grid-template-columns: 1fr; gap: 14px; margin-bottom: 20px; }
-.partner-domain-title { font-size: 13px; font-weight: 700; color: var(--navy); margin-bottom: 3px; }
+.partner-domain-title { font-size: 13px; font-weight: 700; color: var(--navy); margin-bottom: 3px; padding-left: 16px; position: relative; }
+.partner-domain-title::before { content: '•'; position: absolute; left: 0; color: #2E86DE; }
 .partner-domain-desc { font-size: 12px; color: var(--text); opacity: 0.75; line-height: 1.5; }
 @media (min-width: 640px) {
   .partner-domains { grid-template-columns: 1fr 1fr; }
@@ -590,55 +591,42 @@ footer { background: var(--navy); padding: 40px 24px 24px; border-top: 1px solid
         <div class="partner-domains">
           <div class="partner-domain">
             <div class="partner-domain-title">Consultation</div>
-            <div class="partner-domain-desc">Un regard extérieur et argumenté sur vos décisions structurantes, du diagnostic à la recommandation.</div>
           </div>
           <div class="partner-domain">
             <div class="partner-domain-title">Intermédiation</div>
-            <div class="partner-domain-desc">Mise en relation qualifiée entre porteurs de projets, investisseurs et partenaires institutionnels.</div>
           </div>
           <div class="partner-domain">
             <div class="partner-domain-title">Formation</div>
-            <div class="partner-domain-desc">Renforcement des compétences de vos équipes : finance, conformité, gestion de projet et outils numériques.</div>
           </div>
           <div class="partner-domain">
             <div class="partner-domain-title">Études de marché</div>
-            <div class="partner-domain-desc">Analyse de la demande, de la concurrence et des opportunités, là où l'information est rare.</div>
           </div>
           <div class="partner-domain">
             <div class="partner-domain-title">Audit</div>
-            <div class="partner-domain-desc">Audit financier, due diligence et mise en conformité aux référentiels internationaux.</div>
           </div>
           <div class="partner-domain">
             <div class="partner-domain-title">Conseils</div>
-            <div class="partner-domain-desc">Accompagnement des dirigeants dans leurs arbitrages : stratégie, organisation et feuille de route.</div>
           </div>
           <div class="partner-domain">
             <div class="partner-domain-title">Activités d'investissement</div>
-            <div class="partner-domain-desc">Structuration, levée et déploiement de capital autour d'opérations à fort impact.</div>
           </div>
           <div class="partner-domain">
             <div class="partner-domain-title">Solutions informatiques</div>
-            <div class="partner-domain-desc">Conception, intégration et maintenance de systèmes d'information adaptés à vos usages.</div>
           </div>
           <div class="partner-domain">
             <div class="partner-domain-title">Digitalisation</div>
-            <div class="partner-domain-desc">Dématérialisation des processus et adoption des outils numériques, du cadrage à la conduite du changement.</div>
           </div>
           <div class="partner-domain">
             <div class="partner-domain-title">Suivi-évaluation</div>
-            <div class="partner-domain-desc">Dispositifs de suivi, indicateurs et évaluation de la performance des projets et programmes.</div>
           </div>
           <div class="partner-domain">
             <div class="partner-domain-title">Passation de marchés</div>
-            <div class="partner-domain-desc">Préparation, publication et évaluation des appels d'offres, dans le respect des procédures.</div>
           </div>
           <div class="partner-domain">
             <div class="partner-domain-title">Conception et gestion de projets/programmes</div>
-            <div class="partner-domain-desc">Du montage au pilotage opérationnel, jusqu'à la clôture et la reddition des comptes.</div>
           </div>
           <div class="partner-domain">
             <div class="partner-domain-title">Commerce général & prestations diverses</div>
-            <div class="partner-domain-desc">Fourniture de biens et services, achats et prestations sur mesure.</div>
           </div>
         </div>
         <span class="partner-link">Visiter balimanaci.com →</span>
