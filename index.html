@@ -69,11 +69,11 @@ nav {
 .nav-links a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 13px; font-weight: 600; letter-spacing: 0.2px; white-space: nowrap; transition: color 0.2s; }
 .nav-links a:hover { color: var(--gold); }
 
-.nav-toggle { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 5px; width: 34px; height: 34px; padding: 0; background: none; border: none; cursor: pointer; flex-shrink: 0; }
-.nav-toggle-bar { display: block; width: 22px; height: 2px; background: var(--gold); border-radius: 2px; transition: transform 0.25s ease, opacity 0.25s ease; }
-.nav-toggle.active .nav-toggle-bar:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-toggle { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 6px; width: 42px; height: 42px; padding: 0; background: none; border: none; cursor: pointer; flex-shrink: 0; }
+.nav-toggle-bar { display: block; width: 26px; height: 3px; background: var(--gold); border-radius: 2px; transition: transform 0.25s ease, opacity 0.25s ease; }
+.nav-toggle.active .nav-toggle-bar:nth-child(1) { transform: translateY(9px) rotate(45deg); }
 .nav-toggle.active .nav-toggle-bar:nth-child(2) { opacity: 0; }
-.nav-toggle.active .nav-toggle-bar:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+.nav-toggle.active .nav-toggle-bar:nth-child(3) { transform: translateY(-9px) rotate(-45deg); }
 
 .mobile-menu {
   position: absolute; top: 100%; left: 0; right: 0;
