@@ -53,7 +53,7 @@ nav {
   display: flex; align-items: center; justify-content: space-between;
   border-bottom: 1px solid rgba(201,168,76,0.2);
 }
-.nav-logo img { height: 76px; display: block; }
+.nav-logo img { height: 60px; display: block; }
 .nav-cta {
   background: var(--gold); color: var(--navy);
   padding: 8px 18px; border-radius: 6px;
@@ -458,7 +458,7 @@ footer { background: var(--navy); padding: 40px 24px 24px; border-top: 1px solid
     <div class="gold-divider"></div>
     <div class="about-text">
       <p>Silamana Business Model Agency (SBM) est une agence guinéenne de transformation digitale et de stratégie IA spécialisée dans l'accompagnement des PME, entrepreneurs et porteurs de projets africains.</p>
-      <p>Fondée par <strong>Mamoudou Sangaré</strong>, consultant en structuration de projet et stratégie IA, SBM accompagne entrepreneurs, PME et créateurs dans leur transformation digitale et leur compétitivité.</p>
+      <p>Fondée par <strong>Mamoudou Sangaré</strong>, consultant en structuration de projet et stratégie IA, Silamana accompagne entrepreneurs, PME et créateurs dans leur transformation digitale et leur compétitivité.</p>
       <p>Nous combinons structuration de projet, intelligence artificielle, marketing digital, branding et automatisation afin d'aider nos clients à devenir plus <strong>visibles, performants et compétitifs</strong>.</p>
     </div>
     <div class="about-tags">
@@ -549,7 +549,7 @@ footer { background: var(--navy); padding: 40px 24px 24px; border-top: 1px solid
     <div class="portfolio-client fade-in">
       <img loading="lazy" src="images/logo-hak.jpg" alt="Logo Groupe Scolaire Hadja Aminata Konaté" class="client-logo">
       <div class="client-name">Groupe Scolaire Hadja Aminata Konaté (HAK)</div>
-      <div class="client-type">Éducation Privée • Conakry, Guinée • Premier Contrat SBM (2024)</div>
+      <div class="client-type">Éducation Privée • Conakry, Guinée • Premier accompagnement — 2024</div>
       <div class="client-items" style="margin-top:16px;">
         <span class="client-item">10 Cartes Professionnelles Enseignants</span>
         <span class="client-item">Design & Personnalisation</span>
@@ -557,7 +557,7 @@ footer { background: var(--navy); padding: 40px 24px 24px; border-top: 1px solid
         <span class="client-item">Organigramme Institutionnel</span>
       </div>
       <div class="client-result" style="margin-top:12px;">
-        <strong>Résultat :</strong> Livraison complète de 10 cartes professionnelles + fichiers sources, renforçant l'identité visuelle et l'organisation interne de l'établissement. Réalisé quelques jours après l'obtention de mon certificat en Graphisme &amp; Montage Vidéo — c'est le point de départ qui a mené à la création de SBM Agency.
+        <strong>Résultat :</strong> Livraison complète de 10 cartes professionnelles + fichiers sources, renforçant l'identité visuelle et l'organisation interne de l'établissement. Réalisé quelques jours après l'obtention de mon certificat en Graphisme &amp; Montage Vidéo — c'est le point de départ qui a mené à la création de Silamana Business Model Agency.
       </div>
     </div>
 
@@ -845,7 +845,7 @@ footer { background: var(--navy); padding: 40px 24px 24px; border-top: 1px solid
         <span class="client-item">Site web guicordgroup.com — à venir</span>
       </div>
       <div class="client-result" style="margin-top:12px;">
-        <strong>Résultat :</strong> Accompagnement stratégique en cours avec M. Lamine Condé, PDG — SBM Agency positionnée comme conseiller stratégique
+        <strong>Résultat :</strong> Accompagnement stratégique en cours avec M. Lamine Condé, PDG — Silamana Business Model Agency intervient comme conseiller stratégique
       </div>
     </div>
   </div>
@@ -949,7 +949,7 @@ footer { background: var(--navy); padding: 40px 24px 24px; border-top: 1px solid
     <div class="gold-divider fade-in"></div>
     <div class="faq-list fade-in">
       <div class="faq-item">
-        <button type="button" class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">Comment démarre une mission avec SBM Agency ?<span class="faq-icon">+</span></button>
+        <button type="button" class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">Comment démarre une mission avec Silamana ?<span class="faq-icon">+</span></button>
         <div class="faq-answer"><p>Par un échange de cadrage gratuit sur WhatsApp ou en visio, suivi d'une proposition claire précisant le périmètre, les livrables, le calendrier et le budget.</p></div>
       </div>
       <div class="faq-item">
@@ -1047,6 +1047,11 @@ function openLightbox(src) {
 function closeLightbox() {
   document.getElementById('lightbox').classList.remove('active');
 }
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape' && document.getElementById('lightbox').classList.contains('active')) {
+    closeLightbox();
+  }
+});
 function toggleFaq(btn) {
   const item = btn.closest('.faq-item');
   const isOpen = item.classList.toggle('open');
