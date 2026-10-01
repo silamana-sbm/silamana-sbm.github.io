@@ -366,6 +366,31 @@ footer { background: var(--navy); padding: 40px 24px 24px; border-top: 1px solid
 .video-featured .yt-play { width: 64px; height: 64px; font-size: 22px; }
 .yt-facade:focus-visible { outline: 2px solid var(--gold); outline-offset: -2px; }
 
+/* SBM ACADEMY */
+.academy-teaser { background: var(--gray); padding: 48px 24px; }
+.academy-teaser-card { background: var(--white); border-radius: 16px; padding: 28px 24px; border-left: 4px solid var(--gold); box-shadow: 0 2px 16px rgba(0,0,0,0.06); display: flex; flex-direction: column; gap: 14px; align-items: flex-start; }
+.academy-teaser-title { font-family: 'Playfair Display', serif; font-size: clamp(22px, 4.5vw, 30px); font-weight: 900; color: var(--navy); line-height: 1.2; }
+.academy-teaser-text { font-size: 14px; color: var(--text); line-height: 1.7; }
+.academy-teaser-note { font-size: 13px; color: var(--light); line-height: 1.6; }
+.academy-teaser-card .btn-primary { display: inline-block; margin-top: 6px; text-align: center; }
+.academy { background: var(--white); }
+.academy-sub { font-size: 15px; font-weight: 600; color: var(--gold); letter-spacing: 0.5px; margin-bottom: 4px; }
+.academy-intro { font-size: 15px; color: var(--text); line-height: 1.7; max-width: 640px; margin-bottom: 8px; }
+.academy-domains-title { font-family: 'Playfair Display', serif; font-size: clamp(18px, 4vw, 24px); font-weight: 700; color: var(--navy); margin: 32px 0 20px; }
+.academy-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
+.academy-card { background: var(--gray); border-radius: 12px; padding: 24px; border: 1px solid transparent; border-top: 3px solid var(--gold); transition: all 0.25s; }
+.academy-card:hover { border-color: rgba(201,168,76,0.3); border-top-color: var(--gold); transform: translateY(-2px); }
+.academy-card-title { font-size: 15px; font-weight: 700; color: var(--navy); margin-bottom: 12px; line-height: 1.4; }
+.academy-list { list-style: none; }
+.academy-list li { font-size: 13px; color: var(--text); line-height: 1.6; padding: 4px 0 4px 16px; position: relative; }
+.academy-list li::before { content: '•'; position: absolute; left: 0; color: var(--gold); }
+.academy-closing { margin-top: 28px; background: var(--navy); border-radius: 12px; padding: 24px; font-size: 14px; color: rgba(255,255,255,0.85); line-height: 1.7; border: 1px solid rgba(201,168,76,0.25); }
+.academy-closing strong { color: var(--gold); }
+@media (min-width: 700px) {
+  .academy-grid { grid-template-columns: repeat(3, 1fr); }
+  .academy-teaser-card { padding: 32px; }
+}
+
 /* WHATSAPP */
 .wa-float { position: fixed; bottom: 24px; right: 20px; z-index: 999; width: 54px; height: 54px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 20px rgba(37,211,102,0.4); text-decoration: none; font-size: 26px; animation: bounce 3s infinite; transition: transform 0.2s; }
 .wa-float:hover { transform: scale(1.1); }
@@ -536,6 +561,20 @@ footer { background: var(--navy); padding: 40px 24px 24px; border-top: 1px solid
     </div>
   </div>
 </section>
+
+<!-- SBM ACADEMY — APERÇU -->
+<section class="academy-teaser">
+  <div class="section-inner">
+    <div class="academy-teaser-card fade-in">
+      <div class="section-tag" style="margin-bottom:0">Formation</div>
+      <div class="academy-teaser-title">SBM Academy</div>
+      <p class="academy-teaser-text">Le pôle de formation de Silamana Business Model AGENCY dédié aux métiers du numérique, à l’intelligence artificielle, au design, au marketing digital et à la performance business.</p>
+      <p class="academy-teaser-note">Un étudiant certifié et plusieurs apprenants actuellement en formation.</p>
+      <a href="#academy" class="btn-primary">Découvrir SBM Academy</a>
+    </div>
+  </div>
+</section>
+
 
 
 <!-- PORTFOLIO -->
@@ -712,6 +751,49 @@ footer { background: var(--navy); padding: 40px 24px 24px; border-top: 1px solid
         <span class="partner-link">Visiter balimanaci.com →</span>
       </a>
     </div>
+  </div>
+</section>
+
+<!-- SBM ACADEMY — SECTION COMPLÈTE -->
+<section class="academy" id="academy">
+  <div class="section-inner">
+    <div class="section-tag fade-in">Formation</div>
+    <h2 class="section-title fade-in">SBM Academy</h2>
+    <div class="academy-sub fade-in">Pôle de Formation &amp; Développement des Compétences</div>
+    <div class="gold-divider fade-in"></div>
+    <p class="academy-intro fade-in">SBM Academy est le pôle de formation de Silamana Business Model AGENCY.</p>
+    <p class="academy-intro fade-in">Formez-vous aux métiers du futur et à l’intelligence artificielle avec des méthodes 100&nbsp;% pratiques, adaptées au contexte africain.</p>
+    <h3 class="academy-domains-title fade-in">Nos Domaines de Formation</h3>
+    <div class="academy-grid">
+      <div class="academy-card fade-in">
+        <div class="academy-card-title">Création &amp; Technologies</div>
+        <ul class="academy-list">
+          <li>Sites web &amp; applications</li>
+          <li>Infographie</li>
+          <li>Montage vidéo</li>
+          <li>E-commerce &amp; boutiques en ligne</li>
+        </ul>
+      </div>
+      <div class="academy-card fade-in">
+        <div class="academy-card-title">Intelligence artificielle &amp; Design avancé</div>
+        <ul class="academy-list">
+          <li>Création de visuels professionnels avec l’IA</li>
+          <li>Classes et ateliers pratiques en intelligence artificielle</li>
+          <li>Création musicale avec l’IA</li>
+          <li>Voix-off et production audio assistées par l’IA</li>
+        </ul>
+      </div>
+      <div class="academy-card fade-in">
+        <div class="academy-card-title">Business, Data &amp; Performance</div>
+        <ul class="academy-list">
+          <li>Analyse de données &amp; tableaux de bord</li>
+          <li>Automatisation &amp; productivité</li>
+          <li>Community management &amp; marketing digital</li>
+          <li>Freelance &amp; monétisation des compétences</li>
+        </ul>
+      </div>
+    </div>
+    <p class="academy-closing fade-in"><strong>Déjà un étudiant certifié</strong> et plusieurs apprenants actifs en formation pour contribuer au développement de l’écosystème numérique en Guinée et en Afrique.</p>
   </div>
 </section>
 
