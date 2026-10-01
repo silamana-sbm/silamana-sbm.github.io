@@ -11,10 +11,11 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Silamana Business Model AGENCY">
 <meta property="og:description" content="Agence de transformation digitale et stratégie IA en Guinée et Afrique de l'Ouest. Structuration de projet, marketing digital, branding, vidéo et IA.">
-<meta property="og:image" content="https://silamana.com/images/logo-diamant.webp">
+<meta property="og:image" content="https://silamana.com/images/logo-silamana.webp">
 <meta property="og:url" content="https://silamana.com/">
 <meta property="og:locale" content="fr_FR">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://silamana.com/images/logo-silamana.webp">
 <meta name="twitter:title" content="Silamana Business Model AGENCY">
 <meta name="twitter:description" content="Transformation digitale et stratégie IA en Guinée et Afrique de l'Ouest.">
 <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png">
@@ -95,6 +96,13 @@ nav {
   .nav-logo img { height: 80px; }
   .hero { padding-top: 120px; }
   section[id] { scroll-margin-top: 100px; }
+}
+
+/* Nav desktop resserrée entre 1280 et 1439 px (un lien de plus : SBM Academy) */
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .nav-right { gap: 10px; }
+  .nav-links { gap: 12px; }
+  .nav-links a { font-size: 12.5px; }
 }
 
 /* Empêche le contenu de passer sous la nav fixe lors d'un clic sur une ancre */
@@ -418,6 +426,7 @@ footer { background: var(--navy); padding: 40px 24px 24px; border-top: 1px solid
       <a href="#videos">Vidéos</a>
       <a href="#portfolio">Portfolio</a>
       <a href="#partenaires">Partenaires</a>
+      <a href="#academy">SBM Academy</a>
       <a href="#plateforme">Guinée Business Connect</a>
       <a href="#temoignage">Témoignages</a>
       <a href="#faq">FAQ</a>
@@ -438,6 +447,7 @@ footer { background: var(--navy); padding: 40px 24px 24px; border-top: 1px solid
     <a href="#videos" onclick="closeMobileMenu()">Vidéos</a>
     <a href="#portfolio" onclick="closeMobileMenu()">Portfolio</a>
     <a href="#partenaires" onclick="closeMobileMenu()">Partenaires</a>
+    <a href="#academy" onclick="closeMobileMenu()">SBM Academy</a>
     <a href="#plateforme" onclick="closeMobileMenu()">Guinée Business Connect</a>
     <a href="#temoignage" onclick="closeMobileMenu()">Témoignages</a>
     <a href="#faq" onclick="closeMobileMenu()">FAQ</a>
@@ -1098,6 +1108,7 @@ footer { background: var(--navy); padding: 40px 24px 24px; border-top: 1px solid
       <a href="#videos" class="footer-link">Vidéos</a>
       <a href="#portfolio" class="footer-link">Portfolio</a>
       <a href="#partenaires" class="footer-link">Partenaires</a>
+      <a href="#academy" class="footer-link">SBM Academy</a>
       <a href="#plateforme" class="footer-link">Guinée Business Connect</a>
       <a href="#temoignage" class="footer-link">Témoignages</a>
       <a href="#faq" class="footer-link">FAQ</a>
