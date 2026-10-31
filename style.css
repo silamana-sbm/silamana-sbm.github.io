@@ -501,3 +501,15 @@ main { display: block; }
 .footer-bottom .footer-copy { text-align: left; }
 
 @media (max-width: 639px) { .method-grid.stack { grid-template-columns: 1fr; } }
+
+/* === Le fondateur === */
+.founder { background: var(--gray); padding: 64px 24px; }
+.founder-card { display: grid; grid-template-columns: 1fr; gap: 28px; margin-top: 32px; background: var(--white); border-radius: 20px; padding: 24px; box-shadow: 0 2px 20px rgba(10,22,40,0.07); border-top: 5px solid var(--gold); }
+.founder-photo { width: 100%; max-width: 320px; height: auto; border-radius: 16px; display: block; margin: 0 auto; }
+.founder-name { font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 900; color: var(--navy); line-height: 1.2; }
+.founder-role { font-size: 13px; font-weight: 700; color: var(--gold); letter-spacing: 1px; text-transform: uppercase; margin: 6px 0 16px; }
+.founder-text p { font-size: 14px; line-height: 1.8; color: var(--text); margin-bottom: 12px; }
+.founder-creds { list-style: none; padding: 0; margin: 14px 0 0; display: flex; flex-direction: column; gap: 6px; }
+.founder-creds li { font-size: 13px; line-height: 1.6; color: var(--text); padding-left: 18px; position: relative; }
+.founder-creds li::before { content: ""; position: absolute; left: 0; top: 8px; width: 7px; height: 7px; background: var(--gold); border-radius: 2px; }
+@media (min-width: 768px) { .founder-card { grid-template-columns: 300px 1fr; gap: 40px; padding: 36px; align-items: start; } .founder-photo { max-width: none; } }
