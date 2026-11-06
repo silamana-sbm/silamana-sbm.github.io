@@ -522,3 +522,8 @@ main { display: block; }
 .wa-bubble strong { color: #128C7E; }
 .wa-bubble button { position: absolute; top: 4px; right: 6px; background: none; border: 0; font-size: 20px; line-height: 1; color: #6B7A90; cursor: pointer; padding: 4px 6px; }
 @media (prefers-reduced-motion: reduce) { .wa-float { animation: none; } .wa-bubble { transition: none; } }
+
+/* Icônes SVG des cartes (remplacent les emojis) */
+.service-icon { width: 46px; height: 46px; display: flex; align-items: center; justify-content: center; border-radius: 12px; background: rgba(201,168,76,0.12); border: 1px solid rgba(201,168,76,0.28); color: var(--gold); margin-bottom: 14px; }
+.ico-svc { width: 24px; height: 24px; }
+.why-num .ico-svc { width: 30px; height: 30px; color: var(--gold); display: block; }
