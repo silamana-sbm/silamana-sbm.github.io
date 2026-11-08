@@ -52,17 +52,23 @@ function loadYoutubeVideo(el) {
   iframe.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;border:none;';
   el.replaceWith(iframe);
 }
+function quoteNeeds(form) {
+  return Array.from(form.querySelectorAll('input[name="need_opt"]:checked')).map(function (i) { return i.value; }).join(', ');
+}
 function buildWhatsAppText(form) {
   const f = (n) => (form.elements[n] ? form.elements[n].value.trim() : '');
-  let text = `Bonjour Silamana Business Model AGENCY, je vous contacte depuis votre site web.\n\nNom : ${f('name')}\nEmail : ${f('email')}\nSecteur : ${f('sector')}\nBesoin principal : ${f('need')}`;
-  if (f('deadline')) text += `\nDélai souhaité : ${f('deadline')}`;
-  if (f('budget')) text += `\nBudget envisagé : ${f('budget')}`;
-  text += `\nMessage : ${f('message')}`;
+  let text = `Bonjour Silamana Business Model AGENCY, je souhaite un devis (demande depuis votre site web).\n\nNom : ${f('name')}\nEmail : ${f('email')}`;
+  if (f('phone')) text += `\nTéléphone : ${f('phone')}`;
+  text += `\nSecteur : ${f('sector')}\nBesoin(s) : ${quoteNeeds(form)}`;
+  if (f('pack')) text += `\nFormule : ${f('pack')}`;
+  if (f('budget')) text += `\nBudget : ${f('budget')}`;
+  if (f('deadline')) text += `\nDélai : ${f('deadline')}`;
+  text += `\nProjet : ${f('message')}`;
   return text;
 }
 function sendWhatsApp() {
   const form = document.querySelector('.contact-form');
-  if (!form.reportValidity()) return;
+  if (window.quoteValidate && !window.quoteValidate()) return;
   window.open(`https://wa.me/224621849578?text=${encodeURIComponent(buildWhatsAppText(form))}`, '_blank');
 }
 async function handleForm(e) {
@@ -74,10 +80,12 @@ async function handleForm(e) {
   status.className = 'form-status';
   status.textContent = '';
   if (form.botcheck && form.botcheck.checked) return;
+  if (window.quoteValidate && !window.quoteValidate()) return;
+  document.getElementById('contact-need-value').value = quoteNeeds(form);
   btn.disabled = true;
   btn.textContent = 'Envoi en cours…';
   const data = {};
-  new FormData(form).forEach((v, k) => { if (k !== 'botcheck') data[k] = v; });
+  new FormData(form).forEach((v, k) => { if (k !== 'botcheck' && k !== 'need_opt') data[k] = v; });
   try {
     const res = await fetch('https://api.web3forms.com/submit', {
       method: 'POST',
@@ -87,6 +95,8 @@ async function handleForm(e) {
     const json = await res.json();
     if (res.ok && json.success) {
       form.reset();
+      if (window.quoteShow) window.quoteShow(1);
+      form.querySelectorAll('.quote-error').forEach(function (x) { x.classList.remove('show'); });
       status.className = 'form-status ok';
       status.textContent = 'Merci ! Votre message a bien été envoyé. Nous vous répondons rapidement à l\'adresse indiquée.';
     } else {
@@ -159,4 +169,55 @@ async function handleForm(e) {
   b.querySelector('button').addEventListener('click', hide);
   setTimeout(function () { b.classList.add('show'); }, 6000);
   setTimeout(hide, 16000);
+})();
+
+/* Devis guidé en 3 étapes */
+(function () {
+  var form = document.querySelector('.quote-form');
+  if (!form) return;
+  form.classList.add('js-quote');
+  document.documentElement.classList.add('js-quote-on');
+  var steps = form.querySelectorAll('.quote-step');
+  var bars = form.querySelectorAll('.quote-progress span');
+  var names = ['Votre projet', 'Budget et délai', 'Vos coordonnées'];
+  function show(n) {
+    steps.forEach(function (s) { s.classList.toggle('active', +s.getAttribute('data-step') === n); });
+    bars.forEach(function (b, i) { b.classList.toggle('on', i < n); });
+    document.getElementById('quote-stepname').textContent = 'Étape ' + n + ' sur 3 · ' + names[n - 1];
+    var top = form.getBoundingClientRect().top + window.scrollY - 90;
+    window.scrollTo({ top: top, behavior: 'smooth' });
+  }
+  function err(n, msg) {
+    var e = document.getElementById('quote-err' + n);
+    e.textContent = msg || '';
+    e.classList.toggle('show', !!msg);
+  }
+  function valid(n) {
+    err(n, '');
+    if (n === 1) {
+      if (!form.querySelector('input[name="need_opt"]:checked')) { err(1, 'Choisissez au moins un service.'); return false; }
+      if (!form.elements.sector.value) { err(1, 'Indiquez votre secteur d\'activité.'); form.elements.sector.focus(); return false; }
+    }
+    if (n === 2) {
+      if (!form.elements.message.value.trim()) { err(2, 'Décrivez brièvement votre projet.'); form.elements.message.focus(); return false; }
+    }
+    if (n === 3) {
+      if (!form.elements.name.value.trim()) { err(3, 'Indiquez votre nom.'); form.elements.name.focus(); return false; }
+      var em = form.elements.email;
+      if (!em.value.trim() || !em.checkValidity()) { err(3, 'Indiquez une adresse e-mail valide.'); em.focus(); return false; }
+    }
+    return true;
+  }
+  window.quoteValidate = function () { for (var i = 1; i <= 3; i++) { if (!valid(i)) { show(i); return false; } } return true; };
+  form.querySelectorAll('[data-go]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var to = +btn.getAttribute('data-go');
+      var from = +btn.closest('.quote-step').getAttribute('data-step');
+      if (to > from && !valid(from)) return;
+      show(to);
+    });
+  });
+  window.quoteShow = show;
+  steps.forEach(function (s) { s.classList.remove('active'); });
+  steps[0].classList.add('active');
 })();

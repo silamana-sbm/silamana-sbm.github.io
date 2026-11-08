@@ -527,3 +527,25 @@ main { display: block; }
 .service-icon { width: 46px; height: 46px; display: flex; align-items: center; justify-content: center; border-radius: 12px; background: rgba(201,168,76,0.12); border: 1px solid rgba(201,168,76,0.28); color: var(--gold); margin-bottom: 14px; }
 .ico-svc { width: 24px; height: 24px; }
 .why-num .ico-svc { width: 30px; height: 30px; color: var(--gold); display: block; }
+
+/* Devis guidé */
+.quote-progress { display: flex; gap: 6px; margin-bottom: 4px; }
+.quote-progress span { flex: 1; height: 4px; border-radius: 2px; background: #E0E8F0; transition: background .25s; }
+.quote-progress span.on { background: var(--gold); }
+.quote-stepname { font-size: 12px; font-weight: 700; letter-spacing: .5px; color: var(--light); margin-bottom: 2px; }
+.quote-step { border: 0; padding: 0; margin: 0; min-width: 0; display: flex; flex-direction: column; gap: 12px; }
+.js-quote .quote-step { display: none; }
+.js-quote .quote-step.active { display: flex; }
+.quote-label { font-size: 13px; font-weight: 600; color: var(--navy); margin-top: 4px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { cursor: pointer; }
+.chip input { position: absolute; opacity: 0; width: 0; height: 0; }
+.contact-form .chip span { display: inline-block; padding: 10px 14px; border: 1.5px solid #E0E8F0; border-radius: 999px; font-size: 13px; color: var(--text); background: var(--white); transition: all .15s; }
+.chip input:checked + span { background: var(--navy); color: var(--white); border-color: var(--navy); }
+.chip input:focus-visible + span { outline: 2px solid var(--gold); outline-offset: 2px; }
+.quote-nav { display: flex; gap: 10px; justify-content: space-between; }
+.quote-nav .quote-next { margin-left: auto; }
+.contact-form .quote-back { background: transparent; color: var(--navy); border: 1.5px solid #E0E8F0; }
+.contact-form .quote-back:hover { background: var(--gray); color: var(--navy); }
+.quote-error { display: none; font-size: 13px; color: #9B2C2C; background: #FDECEC; padding: 10px 12px; border-radius: 8px; }
+.quote-error.show { display: block; }
