@@ -576,3 +576,5 @@ main { display: block; }
 .article-cta .btn-outline { border-color: rgba(255,255,255,0.35); color: var(--white); }
 
 .testimonial-note { color: rgba(255,255,255,0.75); font-size: 14px; line-height: 1.7; margin-top: 18px; font-style: italic; }
+
+.testimonial-photo { width: 100%; max-width: 520px; height: auto; border-radius: 14px; border: 2px solid rgba(201,168,76,0.5); margin: 4px auto 18px; display: block; cursor: zoom-in; }
