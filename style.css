@@ -574,3 +574,5 @@ main { display: block; }
 .article-cta p { color: rgba(255,255,255,0.8); font-size: 14px; margin-bottom: 18px; }
 .article-cta-btns { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
 .article-cta .btn-outline { border-color: rgba(255,255,255,0.35); color: var(--white); }
+
+.testimonial-note { color: rgba(255,255,255,0.75); font-size: 14px; line-height: 1.7; margin-top: 18px; font-style: italic; }
