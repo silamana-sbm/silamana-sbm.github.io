@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url><loc>https://silamana.com/</loc><lastmod>2026-11-10</lastmod><xhtml:link rel="alternate" hreflang="fr" href="https://silamana.com/"/><xhtml:link rel="alternate" hreflang="en" href="https://silamana.com/en/"/></url>
-  <url><loc>https://silamana.com/a-propos.html</loc><lastmod>2026-11-10</lastmod><xhtml:link rel="alternate" hreflang="fr" href="https://silamana.com/a-propos.html"/><xhtml:link rel="alternate" hreflang="en" href="https://silamana.com/en/about.html"/></url>
-  <url><loc>https://silamana.com/services.html</loc><lastmod>2026-11-10</lastmod><xhtml:link rel="alternate" hreflang="fr" href="https://silamana.com/services.html"/><xhtml:link rel="alternate" hreflang="en" href="https://silamana.com/en/services.html"/></url>
-  <url><loc>https://silamana.com/realisations.html</loc><lastmod>2026-11-10</lastmod><xhtml:link rel="alternate" hreflang="fr" href="https://silamana.com/realisations.html"/><xhtml:link rel="alternate" hreflang="en" href="https://silamana.com/en/portfolio.html"/></url>
-  <url><loc>https://silamana.com/sbm-academy.html</loc><lastmod>2026-11-10</lastmod><xhtml:link rel="alternate" hreflang="fr" href="https://silamana.com/sbm-academy.html"/><xhtml:link rel="alternate" hreflang="en" href="https://silamana.com/en/sbm-academy.html"/></url>
-  <url><loc>https://silamana.com/guinee-business-connect.html</loc><lastmod>2026-11-10</lastmod><xhtml:link rel="alternate" hreflang="fr" href="https://silamana.com/guinee-business-connect.html"/><xhtml:link rel="alternate" hreflang="en" href="https://silamana.com/en/guinee-business-connect.html"/></url>
-  <url><loc>https://silamana.com/contact.html</loc><lastmod>2026-11-10</lastmod><xhtml:link rel="alternate" hreflang="fr" href="https://silamana.com/contact.html"/><xhtml:link rel="alternate" hreflang="en" href="https://silamana.com/en/contact.html"/></url>
-  <url><loc>https://silamana.com/mentions-legales.html</loc><lastmod>2026-11-10</lastmod><xhtml:link rel="alternate" hreflang="fr" href="https://silamana.com/mentions-legales.html"/><xhtml:link rel="alternate" hreflang="en" href="https://silamana.com/en/legal-notice.html"/></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://silamana.com/</loc><lastmod>2026-11-08</lastmod></url>
+  <url><loc>https://silamana.com/a-propos.html</loc><lastmod>2026-11-08</lastmod></url>
+  <url><loc>https://silamana.com/services.html</loc><lastmod>2026-11-08</lastmod></url>
+  <url><loc>https://silamana.com/realisations.html</loc><lastmod>2026-11-08</lastmod></url>
+  <url><loc>https://silamana.com/sbm-academy.html</loc><lastmod>2026-11-08</lastmod></url>
+  <url><loc>https://silamana.com/guinee-business-connect.html</loc><lastmod>2026-11-08</lastmod></url>
+  <url><loc>https://silamana.com/contact.html</loc><lastmod>2026-11-08</lastmod></url>
+  <url><loc>https://silamana.com/mentions-legales.html</loc><lastmod>2026-11-08</lastmod></url>
   <url><loc>https://silamana.com/blog.html</loc><lastmod>2026-11-08</lastmod></url>
   <url><loc>https://silamana.com/blog-business-plan-guinee.html</loc><lastmod>2026-11-08</lastmod></url>
   <url><loc>https://silamana.com/blog-visibilite-pme-internet.html</loc><lastmod>2026-11-08</lastmod></url>
   <url><loc>https://silamana.com/blog-ia-petite-entreprise.html</loc><lastmod>2026-11-08</lastmod></url>
-  <url><loc>https://silamana.com/en/</loc><lastmod>2026-11-10</lastmod><xhtml:link rel="alternate" hreflang="fr" href="https://silamana.com/"/><xhtml:link rel="alternate" hreflang="en" href="https://silamana.com/en/"/></url>
-  <url><loc>https://silamana.com/en/about.html</loc><lastmod>2026-11-10</lastmod><xhtml:link rel="alternate" hreflang="fr" href="https://silamana.com/a-propos.html"/><xhtml:link rel="alternate" hreflang="en" href="https://silamana.com/en/about.html"/></url>
-  <url><loc>https://silamana.com/en/services.html</loc><lastmod>2026-11-10</lastmod><xhtml:link rel="alternate" hreflang="fr" href="https://silamana.com/services.html"/><xhtml:link rel="alternate" hreflang="en" href="https://silamana.com/en/services.html"/></url>
-  <url><loc>https://silamana.com/en/portfolio.html</loc><lastmod>2026-11-10</lastmod><xhtml:link rel="alternate" hreflang="fr" href="https://silamana.com/realisations.html"/><xhtml:link rel="alternate" hreflang="en" href="https://silamana.com/en/portfolio.html"/></url>
-  <url><loc>https://silamana.com/en/sbm-academy.html</loc><lastmod>2026-11-10</lastmod><xhtml:link rel="alternate" hreflang="fr" href="https://silamana.com/sbm-academy.html"/><xhtml:link rel="alternate" hreflang="en" href="https://silamana.com/en/sbm-academy.html"/></url>
-  <url><loc>https://silamana.com/en/guinee-business-connect.html</loc><lastmod>2026-11-10</lastmod><xhtml:link rel="alternate" hreflang="fr" href="https://silamana.com/guinee-business-connect.html"/><xhtml:link rel="alternate" hreflang="en" href="https://silamana.com/en/guinee-business-connect.html"/></url>
-  <url><loc>https://silamana.com/en/contact.html</loc><lastmod>2026-11-10</lastmod><xhtml:link rel="alternate" hreflang="fr" href="https://silamana.com/contact.html"/><xhtml:link rel="alternate" hreflang="en" href="https://silamana.com/en/contact.html"/></url>
-  <url><loc>https://silamana.com/en/legal-notice.html</loc><lastmod>2026-11-10</lastmod><xhtml:link rel="alternate" hreflang="fr" href="https://silamana.com/mentions-legales.html"/><xhtml:link rel="alternate" hreflang="en" href="https://silamana.com/en/legal-notice.html"/></url>
 </urlset>
