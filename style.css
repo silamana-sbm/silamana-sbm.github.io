@@ -589,3 +589,6 @@ main { display: block; }
 .lang-toggle button[aria-pressed="true"] { background: var(--gold, #C9A84C); color: var(--navy, #0A1628); }
 .mobile-menu .lang-toggle { align-self: flex-start; margin: 12px 24px 6px; }
 @media (max-width: 420px) { .nav-right { gap: 8px; } .lang-toggle button { padding: 7px 8px; } .nav-cta { padding: 8px 12px; } }
+
+/* Mobile : barre du haut allégée (bouton WhatsApp masqué, il reste le bouton flottant) */
+@media (max-width: 1023px) { .nav-right .nav-cta { display: none; } }
