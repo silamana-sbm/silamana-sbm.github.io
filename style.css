@@ -624,3 +624,13 @@ main { display: block; }
   .slide-duo img { height: 320px; }
 }
 @media (prefers-reduced-motion: reduce) { .hero-slider .slide { transition: none; } }
+
+/* Réseaux sociaux (pied de page) */
+.social-row { display: flex; align-items: center; gap: 12px; margin-top: 16px; flex-wrap: wrap; }
+.social-title { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: rgba(255,255,255,.55); }
+.social-icons { display: flex; gap: 10px; }
+.social-link { width: 38px; height: 38px; border-radius: 50%; border: 1px solid rgba(201,168,76,.55); color: var(--gold2, #F0D080); display: flex; align-items: center; justify-content: center; transition: all .2s; }
+.social-link svg { width: 18px; height: 18px; }
+.social-link:hover { background: var(--gold); color: var(--navy); transform: translateY(-2px); }
+footer .social-icons .social-link { display: flex; align-items: center; justify-content: center; padding: 0; margin: 0; width: 38px; height: 38px; line-height: 0; }
+footer .social-icons .social-link svg { display: block; width: 18px; height: 18px; margin: 0; }
