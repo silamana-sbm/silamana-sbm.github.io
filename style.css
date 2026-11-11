@@ -634,3 +634,11 @@ main { display: block; }
 .social-link:hover { background: var(--gold); color: var(--navy); transform: translateY(-2px); }
 footer .social-icons .social-link { display: flex; align-items: center; justify-content: center; padding: 0; margin: 0; width: 38px; height: 38px; line-height: 0; }
 footer .social-icons .social-link svg { display: block; width: 18px; height: 18px; margin: 0; }
+
+/* Réseaux sociaux : version plus visible */
+footer .social-row { flex-direction: column; align-items: flex-start; gap: 10px; margin-top: 20px; }
+footer .social-title { font-size: 12px; font-weight: 700; letter-spacing: .12em; color: rgba(255,255,255,.8); }
+footer .social-icons { gap: 12px; }
+footer .social-icons .social-link { width: 44px; height: 44px; background: rgba(255,255,255,.08); border: 1px solid rgba(201,168,76,.45); color: var(--gold, #C9A84C); }
+footer .social-icons .social-link svg { width: 22px; height: 22px; }
+footer .social-icons .social-link:hover, footer .social-icons .social-link:focus-visible { background: var(--gold, #C9A84C); border-color: var(--gold, #C9A84C); color: var(--navy, #0A1628); transform: translateY(-2px); }
