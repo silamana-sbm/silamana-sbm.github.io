@@ -642,3 +642,9 @@ footer .social-icons { gap: 12px; }
 footer .social-icons .social-link { width: 44px; height: 44px; background: rgba(255,255,255,.08); border: 1px solid rgba(201,168,76,.45); color: var(--gold, #C9A84C); }
 footer .social-icons .social-link svg { width: 22px; height: 22px; }
 footer .social-icons .social-link:hover, footer .social-icons .social-link:focus-visible { background: var(--gold, #C9A84C); border-color: var(--gold, #C9A84C); color: var(--navy, #0A1628); transform: translateY(-2px); }
+
+/* Icônes de services : plus de contraste */
+.service-icon { width: 54px; height: 54px; border-radius: 14px; background: linear-gradient(145deg, #0D1F3C, #0A1628); border: 1px solid rgba(201,168,76,.55); color: var(--gold2, #F0D080); box-shadow: 0 6px 16px rgba(10,22,40,.18); }
+.service-icon .ico-svc { width: 28px; height: 28px; stroke-width: 2.1; }
+.service-desc { color: #4a586b; }
+footer .social-icons { flex-wrap: wrap; }

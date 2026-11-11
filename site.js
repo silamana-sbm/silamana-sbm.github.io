@@ -61,7 +61,7 @@
   function ensureDict(cb) {
     if (window.I18N_EN) return cb();
     var sc = document.createElement('script');
-    sc.src = '/i18n-en.js?v=20261114'; sc.onload = cb; document.head.appendChild(sc);
+    sc.src = '/i18n-en.js?v=20261116'; sc.onload = cb; document.head.appendChild(sc);
   }
   function setLang(l) {
     document.documentElement.lang = l; put(KEY, l);
